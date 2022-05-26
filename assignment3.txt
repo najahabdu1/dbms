@@ -1,0 +1,43 @@
+-- 
+-- Roll No: <32>
+-- Name: <Najah Abdu>
+-- Program: <Assignment 3>
+-- 
+
+
+
+--
+-- Dumping data for table <Teaches>
+--
+
+insert into Teaches values('a11','AOS','2020-04-10','2020-04-26');
+insert into Teaches values('a31','ACN','2020-04-06','2020-04-23');
+insert into Teaches values('b21','DBMS','2020-04-07','2020-04-16');
+insert into Teaches values('a21','DBMS','2020-02-10','2021-01-03');
+insert into Teaches values('b13','DFCA','2020-04-10','2022-04-30');
+
+
+--
+-- SQl Query Statements
+--
+
+--Question 2-------
+
+update subject set duration=4;
+
+--Question3-------
+
+select * from faculty where doj>='2020-03-10';
+
+--Question4-------
+
+select * from subject where roomno=101 and duration>2;
+
+--Question5------
+
+select * from Teaches where sdate>='2020-04-01' and edate<='2020-04-30';
+
+--Question6------
+
+select faculty.fname,subject.sname,subject.duration from faculty,subject where faculty.fno=subject.fno and subject.duration;
+
